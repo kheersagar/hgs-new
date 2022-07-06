@@ -1,0 +1,24 @@
+.resultcard{
+    width: 12rem;
+    height: 15rem;
+    border-radius: 10px;
+    box-shadow: 10px 8px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 2rem;
+}
+.studentimg{
+    width: 12rem;
+    height: 10rem;
+    border-radius: 10px 10px 0 0 ;
+    margin-left: -0.5px;
+}
+.details{
+    text-align: center;
+    font-weight: bold;
+}
+.sname {
+    margin-top: 15px;
+}
+.marks{
+    margin-bottom: 0rem;
+    margin-top: -15px;
+}

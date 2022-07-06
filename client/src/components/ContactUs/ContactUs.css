@@ -1,0 +1,33 @@
+.contactus_main {
+  margin-top: 8rem;
+  padding: 0 10%;
+}
+.form-main {
+  margin-bottom: 3em;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  padding: 10px;
+  border-radius: 10px;
+}
+.detail_desc {
+  color: rgba(0,0,0,.61);
+  margin-bottom: 2em;
+}
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.profiles{
+  display: flex;
+}
+.profile{
+  margin-right: 10px;
+}

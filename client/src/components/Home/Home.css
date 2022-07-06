@@ -1,0 +1,18 @@
+.home_main{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.landing_video{
+  height: 100vh !important;
+}
+.landing_video> video{
+  object-fit: cover;
+}
+@media(max-width:640px){
+  .landing_video{
+    height: auto !important;
+    margin-top: 4.7rem;
+  }
+}

@@ -1,0 +1,23 @@
+.slider-img-div {
+  height: 400px;
+  margin-left: 5rem;
+}
+.slider-img-div > img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+.slick-prev {
+  left: 10px !important;
+  z-index: 2;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: #c4c4c4;
+  font-size: 3rem;
+  opacity: 1;
+  transition: 200ms;
+}
+.slick-next {
+  right: 35px !important;
+  z-index: 2;
+}

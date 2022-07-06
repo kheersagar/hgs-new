@@ -1,0 +1,109 @@
+.navbar_menu_main {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)); /* Black background with opacity */
+  z-index: 100000; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  animation: nav-fade-in 0.2s linear alternate;
+}
+@keyframes nav-fade-in {
+  0%{
+    opacity: 0;
+  }
+  25%{   
+    opacity: 0.25;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.75;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.menu_main {
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  margin: auto;
+}
+.menu_item-1 {
+  padding: 0rem 2rem;
+  line-height: 3rem;
+  flex: 1;
+}
+.menu_item {
+  background-color: #1e9ad6;
+  transition: opacity 0.2s linear;
+  transform: translate(0);
+  opacity: 1;
+  padding: 1rem 2rem;
+  line-height: 2.5rem;
+  flex: 1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  margin-top: -30px;
+}
+.hidden {
+  transform: translate(9999px);
+  opacity: 0;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+#01293d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.active-line{
+  position: relative;
+}
+
+.active-line::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: rgba(60, 135, 183, .8901960784313725);
+  top: 0;
+  margin-left: 10px;
+  top: 25px;
+  transition: .3s ease;
+}
+.cross-div{
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
