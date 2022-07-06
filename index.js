@@ -26,7 +26,7 @@ app.get("/test", (req, res) => {
   let response = "";
   try {
     var spawn = require("child_process").spawn;
-    var process = spawn("php", ["./index.php"]);
+    var process = spawn("php", ["./index2.php"]);
     process.stdout.on("data", (data) => {
       console.log(data.toString());
       response = data + "\n";
