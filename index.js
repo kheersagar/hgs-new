@@ -2,10 +2,6 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-process.on("ERR_HTTP_HEADERS_SENT", function (err) {
-  // Handle the error safely
-  console.log(err);
-});
 app.get("/GetRSA", (req, res) => {
   let response = "";
   try {
@@ -46,12 +42,10 @@ app.get("/test", (req, res) => {
   }
 });
 
-if (process.env.NODE_ENV == "production") {
-  app.use(express.static("/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "build", "index.html"));
-  });
-}
+app.use(express.static("./build"));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "build", "index.html"));
+});
 
 app.listen(process.env.PORT || 8080, () => {
   console.log(`server started on port ${process.env.PORT || 8080}`);
