@@ -42,10 +42,7 @@ function CampusTour(props) {
           <Contact />
         </div>
         <div>
-          <div className={`f-2 f-500 color-blue-cyan mb-3`}>
-            {" "}
-            Campus Tour
-          </div>
+          <div className={`f-2 f-500 color-blue-cyan mb-3`}> Campus Tour</div>
           <div className="position-relative">
             <ReactPlayer
               url={campus}
